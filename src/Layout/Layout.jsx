@@ -8,7 +8,7 @@ const Layout = () => {
       <div className='container mx-auto flex items-center justify-center'>
         <div className='flex items-center space-x-4'>
           <div className='group relative'>
-            <NavLink to='/#' className='text-white group-hover:text-gray-300'>
+            <NavLink to='/' className='text-white group-hover:text-gray-300'>
               HOME
             </NavLink>
             <div className='hidden group-hover:block absolute bg-white py-2 px-4 space-y-1 '>
@@ -20,11 +20,11 @@ const Layout = () => {
               </NavLink>
             </div>
           </div>
-          <NavLink to='/#' className='text-white'>
+          <NavLink to='/about' className='text-white'>
             ABOUT
           </NavLink>
           <div className='group relative'>
-            <NavLink to='/#' className='text-white group-hover:text-gray-300'>
+            <NavLink to='/' className='text-white group-hover:text-gray-300'>
               PAGES
             </NavLink>
             <div className='hidden group-hover:block absolute bg-white py-2 px-4 space-y-2'>
@@ -41,7 +41,10 @@ const Layout = () => {
             </div>
           </div>
           <div className='group relative'>
-            <NavLink to='#' className='text-white group-hover:text-gray-300'>
+            <NavLink
+              to='/service'
+              className='text-white group-hover:text-gray-300'
+            >
               SHOP
             </NavLink>
             <div className='hidden group-hover:block absolute bg-white py-2 px-4 space-y-2'>
@@ -55,7 +58,10 @@ const Layout = () => {
             </div>
           </div>
           <div className='group relative'>
-            <NavLink to='#' className='text-white group-hover:text-gray-300'>
+            <NavLink
+              to='/blog'
+              className='text-white group-hover:text-gray-300'
+            >
               BLOG
             </NavLink>
             <div className='hidden group-hover:block absolute bg-white py-2 px-4 space-y-2'>
@@ -68,7 +74,7 @@ const Layout = () => {
               {/* Add more blog options as needed */}
             </div>
           </div>
-          <NavLink to='/#' className='text-white'>
+          <NavLink to='/contact' className='text-white'>
             CONTACT
           </NavLink>
         </div>

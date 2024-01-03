@@ -1,53 +1,37 @@
 import React from "react";
-import { FaFacebook } from "react-icons/fa";
-import { TiSocialTwitter } from "react-icons/ti";
-import { LiaLinkedinIn } from "react-icons/lia";
-import { BiLogoInstagramAlt } from "react-icons/bi";
 
 const Footer = () => {
   return (
-    <div className='text-white flex  py-6 justify-between'>
-      <div>
-        <h1 className='font-bold text-2xl font-Poppins py-4'>WEB LOGO</h1>
-        <p className='text-xs'>Some footer text about the Agency.</p>
-        <p className='text-xs'>Just a little description to help</p>
-        <p className='text-xs'>people understand you better</p>
-        <div className='pt-7 flex gap-4'>
-          <div className='text-[#20B15A] border border-[#000000] rounded-full   flex items-center bg-white'>
-            <FaFacebook className=' h-6 w-6' />
-          </div>
-          <div className='text-white border border-[#000000] rounded-full  flex items-center bg-[#20B15A]'>
-            <TiSocialTwitter className=' h-6 w-6' />
-          </div>
-
-          <div className='text-white border border-[#000000] rounded-full  flex items-center bg-[#20B15A]'>
-            <LiaLinkedinIn className=' h-6 w-6' />
-          </div>
-
-          <div className='text-white  border-[#000000] border rounded-full  flex items-center bg-[#20B15A]'>
-            <BiLogoInstagramAlt className=' h-6 w-6' />
-          </div>
+    <footer className='bg-gray-900 text-white py-8'>
+      <div className='container mx-auto flex flex-col items-center'>
+        <div>
+          <span className='text-[#3e5bc4] font-bold text-3xl'>H</span>
+          <span className='text-3xl text-white'>mart</span>
         </div>
-
-        <p className='text-[10px] py-6'>Copyright Design Agency 2022</p>
+        <p className='text-gray-400 mb-6'>
+          Your one-stop shop for quality products and great deals!
+        </p>
+        <div className='flex space-x-4'>
+          <a href='#' className='hover:text-gray-400 transition duration-300'>
+            Home
+          </a>
+          <a href='#' className='hover:text-gray-400 transition duration-300'>
+            Shop
+          </a>
+          <a href='#' className='hover:text-gray-400 transition duration-300'>
+            About Us
+          </a>
+          <a href='#' className='hover:text-gray-400 transition duration-300'>
+            Contact
+          </a>
+        </div>
+        <div className='mt-4'>
+          <p className='text-gray-400'>
+            &copy; 2024 Hmart. All rights reserved.
+          </p>
+        </div>
       </div>
-      <div className='py-5 '>
-        <ul className='text-xs space-y-4'>
-          <li className='font-semibold text-base'>Quick Links</li>
-          <li>Service</li>
-          <li>Portfolio</li>
-          <li>About Us</li>
-          <li>Contuct Us</li>
-        </ul>
-      </div>
-
-      <div className='py-5'>
-        <h1 className='font-semibold'>Address</h1>
-        <p className='text-xs'>Design Agency Head Office.</p>
-        <p className='text-xs'> Airport Road</p>
-        <p className='text-xs'> United Arab Emirate</p>
-      </div>
-    </div>
+    </footer>
   );
 };
 

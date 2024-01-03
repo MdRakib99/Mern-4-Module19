@@ -1,8 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { GrGroup } from "react-icons/gr";
-import { AiOutlineLike } from "react-icons/ai";
-import { HiOutlineEmojiHappy } from "react-icons/hi";
-import { BsQrCodeScan } from "react-icons/bs";
 
 const Card = () => {
   const [cardItems, setCardItems] = useState([]);
@@ -18,38 +14,30 @@ const Card = () => {
   }, []);
 
   return (
-    <div className='flex mx-auto w-[70%] gap-10 '>
-      {cardItems.map((item, index) => (
-        <div
-          key={index}
-          className='w-44 h-44 border rounded-lg shadow-2xl flex flex-col items-center justify-center'
-        >
-          <div className='bg-[#D7F5DC] w-14 h-14 flex items-center justify-center border rounded-lg'>
-            {React.createElement(getIconComponent(item.icon), {
-              className: "h-8 w-8",
-            })}
-          </div>
-          <h4 className='font-bold py-2 text-[#000000]'>{item.count}</h4>
-          <p className='text-xs'>{item.label}</p>
-        </div>
-      ))}
+    <div className='container mx-auto my-8 p-8'>
+      <h2 className='text-2xl font-bold mb-4'>Popular Products</h2>
+      <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8'>
+        {cardItems.projects ? (
+          cardItems.projects.map((item) => (
+            <div key={item.id} className='bg-white p-4 rounded-md shadow-md'>
+              <img
+                src={item.image}
+                alt={item.title}
+                className='w-full h-auto rounded-md mb-4'
+              />
+              <p className='text-gray-800 font-semibold'>{item.title}</p>
+              <p className='text-gray-500'>{item.price}</p>
+              <button className='bg-blue-500 text-white px-2 py-1 rounded-md mt-2 hover:bg-blue-700 transition duration-300'>
+                Add to Cart
+              </button>
+            </div>
+          ))
+        ) : (
+          <p>Loading...</p>
+        )}
+      </div>
     </div>
   );
-};
-
-const getIconComponent = (iconName) => {
-  switch (iconName) {
-    case "GrGroup":
-      return GrGroup;
-    case "AiOutlineLike":
-      return AiOutlineLike;
-    case "HiOutlineEmojiHappy":
-      return HiOutlineEmojiHappy;
-    case "BsQrCodeScan":
-      return BsQrCodeScan;
-    default:
-      return null;
-  }
 };
 
 export default Card;

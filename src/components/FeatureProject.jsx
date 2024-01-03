@@ -24,7 +24,7 @@ const FeatureProject = () => {
   return (
     <div className='container mx-auto p-8'>
       <h2 className='text-3xl font-bold text-[#20B15A] mb-6'>
-        FEATURE PROJECT
+        FEATURE PRODUCT
       </h2>
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8'>
         {featuredData.projects.map((project) => (
@@ -34,11 +34,10 @@ const FeatureProject = () => {
               src={project.image}
               alt='#'
             />
-            <p className='text-xs text-gray-500 mb-2'>{project.description}</p>
+            <p className='text-xs text-gray-500 mb-2'>{project.price}</p>
             <p className='text-lg font-semibold text-[#000000] mb-4'>
               {project.title}
             </p>
-            <p className='text-xs text-gray-500'>{project.date}</p>
           </div>
         ))}
       </div>

@@ -1,22 +1,22 @@
-[
-  {
-    "icon": "GrGroup",
-    "count": 240452,
-    "label": "Followers"
-  },
-  {
-    "icon": "AiOutlineLike",
-    "count": 6300,
-    "label": "Solved problems"
-  },
-  {
-    "icon": "HiOutlineEmojiHappy",
-    "count": 2500,
-    "label": "Happy customers"
-  },
-  {
-    "icon": "BsQrCodeScan",
-    "count": 360452,
-    "label": "Projects"
-  }
-]
+{
+  "projects": [
+    {
+      "id": 1,
+      "image": "/Image/smartProducts1.avif",
+      "price": "89$",
+      "title": "Smart Products1"
+    },
+    {
+      "id": 2,
+      "image": "/Image/smartProducts2.jpg",
+      "price": "89$",
+      "title": "Smart Products2"
+    },
+    {
+      "id": 3,
+      "image": "/Image/smartProducts3.jpg",
+      "price": "89$",
+      "title": "Smart Products3"
+    }
+  ]
+}

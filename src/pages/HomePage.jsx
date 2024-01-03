@@ -2,12 +2,13 @@ import React from "react";
 import Layout from "../Layout/Layout";
 import Banner from "../components/Banner";
 import Slide from "../components/Slide";
-import WorkList from "../components/WorkList";
+
 import Card from "../components/Card";
 import FeatureProject from "../components/FeatureProject";
 import Subscribe from "../components/Subscribe";
 import Footer from "../components/Footer";
 import Search from "../components/Search";
+import Feedback from "../components/Feedback";
 
 const HomePage = () => {
   return (
@@ -24,16 +25,17 @@ const HomePage = () => {
       <div className=' '>
         <Slide />
       </div>
-      <div className=''>
-        <WorkList />
-      </div>
+
       <div className=''>
         <Card />
       </div>
       <div className=''>
         <FeatureProject />
       </div>
-      <div className=''>
+      <div>
+        <Feedback />
+      </div>
+      <div>
         <Subscribe />
       </div>
       <div className='bg-[#000000]'>
